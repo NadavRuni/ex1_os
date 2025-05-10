@@ -1,0 +1,14 @@
+{
+  "name": "C Development",
+  "image": "ubuntu:24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/gcc:1": {}
+  },
+  "postCreateCommand": "apt update && apt install -y gdb build-essential",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.cpptools"]
+    }
+  },
+  "workspaceFolder": "/workspace"
+}
